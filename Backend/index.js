@@ -22,6 +22,9 @@ app.get("/", (req,res)=>{
     res.send("Welcome to backend of instagram")
 })
 
+
+//
+
 app.use("/" ,cors(), userRouter)
 app.use("/instapost",cors(), instaRouter)
 
